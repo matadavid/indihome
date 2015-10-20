@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="pendaftaran.css">
+	<title>Pendaftaran Indihome</title>
+</head>
+<body bgcolor="#ecf0f1">
+<h2>Kontrak Berlangganan INDIHOME</h1>
+	<div class="Detail_Layanan">
+		<h3>I. Detail Layanan</h3>
+		<div class="Detail_Layanan1">
+			<div class="JenisnPaket">
+				<div class="Jenis_Permohonan">
+					<p>Jenis Permohonan*:</p>
+					<form>
+						<input type="radio" name="jenis" value="baru">Kontrak Baru
+						<br>
+						<input type="radio" name="jenis" value="upgrade">Upgrade Layanan
+					</form>
+				</div>
+				<div class="Paket_Layanan">
+					<p>Paket Layanan IndiHome DTH Transvision* :</p>
+					<form>
+						<input type="radio" name="kecepatan" value="1mb">1Mbps
+						<br>
+						<input type="radio" name="kecepatan" value="2mb">2Mbps
+						<br>
+						<input type="radio" name="kecepatan" value="3mb">3Mbps
+						<br>
+						<input type="radio">
+						<input type="text" name="lainnya" value="Lainnya">
+					</form>
+				</div>
+			</div>
+			<div class="NoLayanan">
+				<p>Nomor Layanan(khusus bagi pelanggan yang upgrade layanan):</p>
+				<form>
+					<p>1. Nomor Telepon Rumah* : <input type="number" name="noTelp" maxlength="12">
+					<br>
+					2. Nomor Internet/Indihome : <input type="number" name="noInet" maxlength="19">
+					</p>
+				</form>
+			</div>
+			<div class="Waktu_Instalasi">
+				<p>Waktu Instalasi(sebagai referensi):</p>
+				<p>1. Hari :<input type="day" name="hari" size="10"> Tanggal :<input type="date" name="tanggal"> Waktu: <input type="time" name="jam"> </p>
+				<p>2. Hari :<input type="day" name="hari" size="10"> Tanggal :<input type="date" name="tanggal"> Waktu: <input type="time" name="jam"> </p>
+				<p>3. Hari :<input type="day" name="hari" size="10"> Tanggal :<input type="date" name="tanggal"> Waktu: <input type="time" name="jam"> 	
+				</p>
+			</div>
+		</div>
+		<div class="Fitur_Tambahan">
+			<p>Fitur Tambahan :</p>
+			<input type="radio" name="fitur" value="">IndiHome view
+			<br>
+			<input type="radio" name="fitur" value="">Melon
+			<br>
+			<input type="radio" name="fitur" value="">Antivirus
+			<br>
+			<input type="radio" name="fitur" value="">Wifi.id
+			<br>
+			<input type="radio" name="fitur" value="">SLI
+			<br>
+			<input type="radio" name="fitur" value="">Call ke Telkom
+			<br>
+			<input type="radio"><input type="text" name="lainnya" value="Lainnya">
+		</div>
+	</div>
+	<div class="Detail_Pelanggan"></div>
+	<div class="Jenis_Pembayaran"></div>
+	<div class="Pembayaran_via_Debit"></div>
+	<div class="Informasi_Tagihan"></div>
+	<div class="Informasi_Tambahan"></div>
+</body>
+</html>
