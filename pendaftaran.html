@@ -37,7 +37,7 @@
 				<form>
 					<p>1. Nomor Telepon Rumah* : <input type="number" name="noTelp" maxlength="12">
 					<br>
-					2. Nomor Internet/Indihome : <input type="number" name="noInet" maxlength="19">
+					2. Nomor Internet/Indihome* : <input type="number" name="noInet" maxlength="19" required>
 					</p>
 				</form>
 			</div>
@@ -51,25 +51,110 @@
 		</div>
 		<div class="Fitur_Tambahan">
 			<p>Fitur Tambahan :</p>
-			<input type="radio" name="fitur" value="">IndiHome view
+			<input type="checkbox" name="fitur" value="">IndiHome view
 			<br>
-			<input type="radio" name="fitur" value="">Melon
+			<input type="checkbox" name="fitur" value="">Melon
 			<br>
-			<input type="radio" name="fitur" value="">Antivirus
+			<input type="checkbox" name="fitur" value="">Antivirus
 			<br>
-			<input type="radio" name="fitur" value="">Wifi.id
+			<input type="checkbox" name="fitur" value="">Wifi.id
 			<br>
-			<input type="radio" name="fitur" value="">SLI
+			<input type="checkbox" name="fitur" value="">SLI
 			<br>
-			<input type="radio" name="fitur" value="">Call ke Telkom
+			<input type="checkbox" name="fitur" value="">Call ke Telkom
 			<br>
-			<input type="radio"><input type="text" name="lainnya" value="Lainnya">
+			<input type="checkbox"><input type="text" name="lainnya" value="Lainnya">
 		</div>
+		<p style="float:right ;margin-top:-15px ; margin-right: 20px" >*mandatory/Wajib diIsi</p>
 	</div>
-	<div class="Detail_Pelanggan"></div>
-	<div class="Jenis_Pembayaran"></div>
-	<div class="Pembayaran_via_Debit"></div>
-	<div class="Informasi_Tagihan"></div>
-	<div class="Informasi_Tambahan"></div>
+	<div class="Detail_Pelanggan">
+		<h3>II. Detail Pelanggan</h3>
+		<p>Yang Bertanda tangan di bawah ini:</p>
+		<p>1. Nama * : <input type="text" name="nama" ></p>
+		<p>2. Indentitas * : <input type="radio" name="identitas" value="KTP" >KTP
+							 <input type="radio" name="identitas" value="SIM" >SIM	
+							 <input type="radio" name="identitas" value="KTP" >PASSPORT
+							 No. <input type="number" name="noIdentitas" ></p>
+		<p>3. Alamat* : <input type="text" name="alamat" size="60">   Kode Pos <input type="number" name="kodePos" ></p>		
+		<p style="margin-left: 2px">Dalam hal ini bertindak untuk dan atas nama * :<input type="radio" name="identitas" value="Pribadi" >Pribadi
+							 													   <input type="radio" name="identitas" value="Pemberi">Pemberi Kuasa
+							 													   <input type="radio" name="identitas" value="Perusahaan" >Perusahaan </p>
+		<p>4. Nama Pelanggan* : <input type="text" name="namaPelanggan"></p>
+		<p>5. Indentitas * : <input type="radio" name="identitasPelanggan" value="KTP" >KTP
+							 <input type="radio" name="identitasPelanggan" value="SIM" >SIM	
+							 <input type="radio" name="identitasPelanggan" value="KTP" >PASSPORT
+							 No. <input type="number" name="noIdentitasPelanggam" ></p>
+		<p>6. Alamat* : <input type="text" name="alamat" size="60">   Kode Pos <input type="number" name="kodePos" ></p>
+		<p>7. Nomor NPWP : <input type="number" name="noNPWP"></p>
+		<div class="biodataIbu">
+			<p>Ibu* : <input type="text" name="namaIbu"></p>
+			<p>Email* :<input type="email" name="emailIbu"></p>
+			<p>Nomor Kontak* : Rumah.<input type="number" name="">  HP.<input type="number" name=""></p>
+		</div>
+		<p>8. Status Pemasang di alamat tersebut* : <input type="radio" name="statusRumah" value="Pemilik" >Pemilik
+							 						<input type="radio" name="statusRumah" value="Penyewa" >Penyewa
+							 						<input type="radio" name="statusRumah" value="Lain-lain" >Lain-lain</p>
+		<p>9. Komunikasi yang disukai : <input type="radio" name="komunikasi" value="E-mail" >E-mail
+										<input type="radio" name="komunikasi" value="Surat" >Surat
+										<input type="radio" name="komunikasi" value="Telepon" >Telepon
+										<input type="radio" name="komunikasi" value="HP" > Handphone
+		</p>
+		<p style="float:right; margin-right: 20px">* mandatori/Wajib Diisi</p>
+	</div>
+	<div class="Jenis_Pembayaran">
+		<h3>III. Jenis Pembayaran</h3>
+		<p>1. Jenis Pembayaran : <input type="radio" name="jenisPembayaran" value="Tunai" > Tunai
+								 <input type="radio" name="jenisPembayaran" value="Transfer" > Transfer
+								 <input type="radio" name="jenisPembayaran" value="Autodebet" > Autodebet</p>
+		<p>2. Bank : <input type="text" name="namaBank" size 40px></p>
+		<p>3. No.Rekening : <input type="number" name="noRekening"></p>
+		<p>4. Atas Nama :<input type="text" name="namaRekening"></p>
+	</div>
+	<div class="Pembayaran_Debit">
+		<h3>IV. Jenis Pembayaran via Debit Kartu Kredit(bila tidak memilih poin III)</h3>
+		<p>1. Jenis Kartu Kredit : <input type="radio" name="jenisKartukredit" value="Visa">Visa
+								   <input type="radio" name="jenisKartukredit" value="Master">Master</p>
+		<p>2. Nama Pemegang Kartu : <input type="text" name="namaPemegangKartu"></p>
+		<p>3. Nomor Kartu :<input type="number" name="noKartukredit"></p>
+		<p>4. Masa Berlaku : Bulan. <input type="text" name="bulanKartukredit"> Tahun. <input type="text" name="tahunKartukredit"></p>
+		<p>5. Bank Penerbit : <input type="text" name="bankKartukredit"></p>
+	</div>
+	<div class="Informasi_Tagihan">
+		<h3>V. Iformasi Tagihan </h3>
+		<p>Alamat Penagihan : <input type="text" size="60" name="alamatPenagihan"> Kode POS: <input type="number" name="kodePosKartukredit"></p>
+	</div>
+	<div class="Informasi_Tambahan">
+		<h3>VI. Informasi Tambahan</h3>
+		<p>Umum: </p>
+		<ol>
+			<li> Bersedia menerima Informasi dari TELKOM Group atau Authorized Partner melalui berbagai media termasuk telepon sms, email, dan internet ads 
+			<br>
+			<input type="checkbox" name="umum1" value="true"></li>
+			<li> Melaporkan secara tertulis kepada TELKOM atas setiap pemindah-tanganan hak tanggung jawab dan/ atau kewajiban Pelanggan kepada pihak lain 
+			<br>
+			<input type="checkbox" name="umum2" value="true"></li>
+			<li> Memberitahukan kepada TELKOM apabila bermaksud berhenti berlangganan sementara atau memutuskan kontrak ini 
+			<br>
+			<input type="checkbox" name="umum3" value="true"></li>
+			<li> (**) Informasi ibu kandung wajib di isi jika berlangganan Fitur Tambahan Call ke Telkomsel
+			<br>
+			<input type="checkbox" name="umum4" value="true"></li>
+		</ol>
+		<p>Instalasi</p>
+		<ol>
+			<li> Memberikan izin untuk proses instalsi, perawatan, dan perbaikan gangguan IndiHome DTH Transvision 
+			<br>
+			<input type="checkbox" name="instalasi1" value="true"></li>
+			<li> Memelihara instalsi IndiHome DTH Transvision agar selalu dalam keadaan baik atas biaya pelanggan
+			<br>
+			<input type="checkbox" name="instalasi2" value="true"></li>
+			<li> Melaporkan pada Tlkokm jika sambungan layanan IndiHome Mengalami gangguan/ Kerusakan
+			<br>
+			<input type="checkbox" name="instalasi3" value="true"></li>
+			<li> Pelanggan akan dikenakan biaya instalasi DTH Transvision saat pemasangan perangkat dan biaya sewa modem setiap bulan sesuai ketentuan yang berlaku 
+			<br>
+			<input type="checkbox" name="instalasi4" value="true"></li>
+		</ol>
+	</div>
 </body>
 </html>
